@@ -1,18 +1,24 @@
 {
-    "quickstack.toast.header": "Deposit Successful!",
-    "quickstack.toast.description": "%1$s %2$s \u2192 %3$s %4$s",
+  "quickstack.toast.header": "Deposit Successful!",
+  "quickstack.toast.description": "%1$s %2$s \u2192 %3$s %4$s",
 
-    "quickstack.dict.item.singular": "item",
-    "quickstack.dict.item.plural": "items",
-    "quickstack.dict.chest.singular": "chest",
-    "quickstack.dict.chest.plural": "chests",
+  "quickstack.dict.item.singular": "item",
+  "quickstack.dict.item.plural": "items",
+  "quickstack.dict.chest.singular": "chest",
+  "quickstack.dict.chest.plural": "chests",
 
-    "quickstack.carrotconfig.title": "QuickStack Configuration!",
-    "quickstack.carrotconfig.title.name": "General",
+  "quickstack.carrotconfig.title": "QuickStack Configuration!",
+  "quickstack.carrotconfig.title.name": "General",
 
-    "quickstack.carrotconfig.allowHotbarQuickStack.name": "Allow Hotbar Quick Stack",
-    "quickstack.carrotconfig.allowHotbarQuickStack.tooltip": "Denotes whether items in the hotbar should be quick stacked.",
+  "quickstack.carrotconfig.allowHotbarQuickStack.name": "Allow Hotbar Quick Stack",
+  "quickstack.carrotconfig.allowHotbarQuickStack.tooltip": "Denotes whether items in the hotbar should be quick stacked.",
 
-    "quickstack.carrotconfig.containerSearchRadius.name": "Container Search Radius",
-    "quickstack.carrotconfig.containerSearchRadius.tooltip": "Denotes the distance (in blocks) to search for containers when quick stacking."
+  "quickstack.carrotconfig.containerSearchRadius.name": "Container Search Radius",
+  "quickstack.carrotconfig.containerSearchRadius.tooltip": "Denotes the distance (in blocks) to search for containers when quick stacking.",
+
+  "quickstack.carrotconfig.quickStackButtonX.name": "Quick Stack Button X Position",
+  "quickstack.carrotconfig.quickStackButtonX.tooltip": "The X position of the quick stack button.",
+
+  "quickstack.carrotconfig.quickStackButtonY.name": "Quick Stack Button Y Position",
+  "quickstack.carrotconfig.quickStackButtonY.tooltip": "The Y position of the quick stack button."
 }

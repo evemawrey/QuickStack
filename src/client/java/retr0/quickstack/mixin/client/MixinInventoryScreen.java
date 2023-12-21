@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import retr0.quickstack.config.QuickStackConfig;
 import retr0.quickstack.network.client.C2SPacketDepositRequest;
 
 import static retr0.quickstack.QuickStack.MOD_ID;
@@ -42,7 +43,7 @@ public abstract class MixinInventoryScreen extends AbstractInventoryScreen<Playe
         // noinspection DataFlowIssue // player is non-null while in game.
         if (client.player.isSpectator()) return;
 
-        int x = this.x + 128, y = height / 2 - 22;
+        int x = this.x + QuickStackConfig.quickStackButtonX, y = height / 2 + QuickStackConfig.quickStackButtonY;
         quickStackButton = new TexturedButtonWidget(x, y, 20, 18, 0, 0, 19, QUICK_STACK_BUTTON_TEXTURE, 32, 64,
             button -> C2SPacketDepositRequest.send());
 
@@ -63,7 +64,7 @@ public abstract class MixinInventoryScreen extends AbstractInventoryScreen<Playe
         // noinspection DataFlowIssue // player is non-null while in game.
         if (client.player.isSpectator()) return original;
 
-        int x = this.x + 128, y = height / 2 - 22;
+        int x = this.x + QuickStackConfig.quickStackButtonX, y = height / 2 + QuickStackConfig.quickStackButtonY;
         return button -> {
             original.onPress(button);
             quickStackButton.setPosition(x, y);

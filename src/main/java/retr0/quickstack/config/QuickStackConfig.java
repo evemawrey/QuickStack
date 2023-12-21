@@ -8,4 +8,10 @@ public class QuickStackConfig extends CarrotConfig {
 
     @Entry(min = 0)
     public static int containerSearchRadius = 8;
+
+    @Entry
+    public static int quickStackButtonX = 128;
+
+    @Entry
+    public static int quickStackButtonY = -22;
 }
